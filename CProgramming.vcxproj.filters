@@ -30,6 +30,15 @@
     <ClCompile Include="Enemy.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="InputManager.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletPool.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsManager.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h">
@@ -42,6 +51,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletPool.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

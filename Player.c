@@ -2,11 +2,15 @@
 
 #include "Player.h"
 
-Player* CreateNewPlayer(char* shape)
+Player* CreateNewPlayer(char* shape, int x, int y)
 {
 	Player* player = (Player*)malloc(sizeof(Player));
-	player->shape = (char*)malloc(strlen(shape)+1);
+	player->shape = (char*)malloc(strlen(shape) + 1);
+	strcpy_s(player->shape, strlen(shape)+1, shape);
 	player->size = strlen(shape);
+	player->x = x - (player->size/2);
+	player->y = y - 1;
+
 	return player;
 }
 

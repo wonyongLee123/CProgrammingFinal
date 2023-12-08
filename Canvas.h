@@ -2,6 +2,7 @@
 
 #include "Player.h"
 #include "Enemy.h"
+#include "BulletPool.h"
 
 
 struct {
@@ -12,6 +13,6 @@ struct {
 
 Canvas* InitCanvas(int width, int height);
 void Draw(Canvas* canvas);
-void UpdateCanvas(Canvas* canvas, Player* player, Enemy* enemy);
+void UpdateCanvas(Canvas* canvas, Player* player, Enemy* enemy, Bullet* bulletPool, int maxBullet, int numberOfEnemies);
 void ClearCanvas(Canvas* canvas);
 void DeleteCanvas(Canvas* canvas);

@@ -9,5 +9,5 @@ struct {
 	int x, y;
 }typedef Player;
 
-Player* CreateNewPlayer(char* shape);
+Player* CreateNewPlayer(char* shape, int x, int y);
 void DeletePlayer(Player* player);
