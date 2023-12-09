@@ -21,12 +21,11 @@ void DeleteEnemies(Enemy* enemy, int numberOfEnemies)
 		enemy[i].x = 0;
 		enemy[i].y = 0;
 		enemy[i].isDead = false;
-		free(enemy[i].shape);
 	}
 	free(enemy);
 }
 
-void UpdateEnemyPosition(Enemy* enemies, int numberOfEnemies, int width,int height, GameCondition *gameCondition)
+void UpdateEnemyPosition(Enemy* enemies, int numberOfEnemies, int width,int height, int *gameCondition)
 {
 	int live = 0;
 	for (int i = 0; i < numberOfEnemies; ++i) {
@@ -55,12 +54,12 @@ void UpdateEnemyPosition(Enemy* enemies, int numberOfEnemies, int width,int heig
 			}
 
 			if (enemies[i].y == height - 4) {
-				gameCondition = Lose;
+				*gameCondition = 2;
 			}
 		}
 	}
 
 	if (live == 0) {
-		gameCondition = Win;
+		*gameCondition = 1;
 	}
 }

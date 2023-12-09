@@ -13,7 +13,6 @@ void InitBulletPool(Bullet* bulletPool,char* shape, int maxBullet)
 void DeleteBulletPool(Bullet* bulletPool, int maxBullet)
 {
 	for (int i = 0; i < maxBullet; ++i) {
-		free(bulletPool[i].shape[i]);
 		bulletPool[i].x = -1;
 		bulletPool[i].y = -1;
 		bulletPool[i].isUsable = false;

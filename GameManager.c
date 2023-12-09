@@ -1,7 +1,7 @@
 #include "GameManager.h"
 
 
-void Update(Canvas* canvas, Player* player, Enemy* enemy, Bullet* bulletPool, int maxBullet, int numberOfEnemies, GameCondition *gameCondition)
+void Update(Canvas* canvas, Player* player, Enemy* enemy, Bullet* bulletPool, int maxBullet, int numberOfEnemies, int *gameCondition)
 {
 	system("cls");
 	ClearCanvas(canvas);

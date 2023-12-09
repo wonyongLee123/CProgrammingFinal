@@ -1,19 +1,15 @@
 #include "Canvas.h"
-#include <string.h>
-#include <stdio.h>
 
-Canvas* InitCanvas(int width, int height)
+
+void InitCanvas(Canvas* canvas,int width, int height)
 {
-	Canvas* canvas = (Canvas*)malloc(sizeof(Canvas));
 	canvas->width = width;
 	canvas->height = height;
-	canvas->canvas = (char*)malloc(width * height + 1);
-	canvas->canvas[width * height] = '\0';
+	canvas->canvas = (char*)malloc((width * height) + 1);
 
 	for (int i = 0; i < canvas->width* canvas->height; ++i) {
 		canvas->canvas[i] = '#';
 	}
-	return canvas;
 }
 
 void Draw(Canvas* canvas)

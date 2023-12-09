@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="BulletPool.h" />
     <ClInclude Include="Canvas.h" />
+    <ClInclude Include="commonStruct.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="InputManager.h" />

@@ -1,4 +1,4 @@
-#include "InputManager.h";
+#include "InputManager.h"
 
 void InputManager(Player* player,Bullet *bulletPool, int maxBullet, int width, int height)
 {
